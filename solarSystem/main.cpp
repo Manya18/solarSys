@@ -1,6 +1,5 @@
 #include <GL/glut.h>
 #include <cmath>
-#include <soil.h>
 #include <Gl/GL.h>
 
 float moonPosX = 0.0f; // moon x coordinates
