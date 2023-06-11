@@ -1,6 +1,6 @@
 # **Solar System**
 ## Программа имитирует движение Луны вокруг Земли
-![Alt-вид программы](".\screenshots\view.png")
+![Вид программы](https://github.com/Manya18/solarSys/blob/master/screenshots/view.png)
 
 ## Для запуска программы: 
 ## 1. Установите Visual Studio
