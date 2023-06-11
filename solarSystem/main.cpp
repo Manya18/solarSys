@@ -1,5 +1,7 @@
 #include <GL/glut.h>
 #include <cmath>
+#include <soil.h>
+#include <Gl/GL.h>
 
 float moonPosX = 0.0f; // moon x coordinates
 float moonPosY = 0.0f; // moon Y coordinates
@@ -35,6 +37,7 @@ void display_game()
     // the moon
     glColor3f(0.5, 0.5, 0.5);
     glPushMatrix();
+
     if (part == 0) glTranslatef(moonPosX, moonPosY, 0.9f); // the moon is behind the earth
     else glTranslatef(moonPosX, moonPosY, -0.9f); // the moon in front of the earth
     glScalef(scalingFactor, scalingFactor, 0.0f); // to scale
@@ -85,6 +88,7 @@ int main(int argc, char** argv) {
     glutDisplayFunc(display_game);
 
     glutTimerFunc(0, update, 0);
+
     glutMainLoop();
 
     return 0;
